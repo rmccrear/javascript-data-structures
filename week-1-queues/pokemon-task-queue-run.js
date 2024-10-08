@@ -7,6 +7,9 @@ const taskQueue = new FetchPokemonTaskQueue();
 taskQueue.fetchPokemon('pikachu');
 taskQueue.fetchPokemon('charmander');
 taskQueue.fetchPokemon('bulbasaur');
+taskQueue.fetchPokemon('butterfree');
+taskQueue.fetchPokemon('meowth');
+
 
 // Start processing the queue sequentially using the processQueue method
 taskQueue.processQueue();
