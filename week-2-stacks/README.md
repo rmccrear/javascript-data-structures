@@ -31,4 +31,10 @@
 
    **Test**: Check whether the stack is empty using the `isEmpty()` method after pushing and popping elements.
 
+8. Make `storage` a (private property)[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_properties] of Stack. A private property is one you cannot access from outside of the class. You do this by changing the variable name to `#storage` and adding this line to the body of you class declaration:
+
+    #storage
+
+   **Test**: Prove to yourself that this is indeed private. Try accessing `stack.storage` and `stack.#storage`. Verify that you cannot. Try accessing `stack.#storage` indirectly using the methods you created such as `push` and `peek`. Verify that you can access the contents of `#storage`, but only mediated by the methods defined in Stack.
+
 By taking this test-driven approach, you will incrementally build the `Stack` class and verify its behavior at each step. Each method should be tested before moving on to the next one.
