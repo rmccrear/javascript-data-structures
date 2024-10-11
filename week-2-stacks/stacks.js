@@ -1,0 +1,11 @@
+let s = new Stack();
+s.push("Alice");
+s.push("Bob");
+s.push("Carol");
+console.log(s);
+s.push("Derek");
+console.log(s);
+let first = s.pop();
+console.log(first);
+let last = s.peek();
+console.log(last);
