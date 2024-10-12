@@ -3,8 +3,8 @@ class Stack {
     constructor() {
         this.items = [];
     }
-    push(element) {
-        this.items.push(element);
+    push(names) {
+        this.items.push(names);
     }
     pop() {
         return this.items.pop();
@@ -13,7 +13,7 @@ class Stack {
         return this.items[0];
     }
     isEmpty() {
-       return this.items.length === 0;
+        return this.items.length === 0;
     };
 }
 
@@ -27,6 +27,7 @@ console.log(s);
 
 let first = s.pop();
 console.log(first);
+
 let last = s.peek();
 console.log(last);
 console.log(s.isEmpty());
