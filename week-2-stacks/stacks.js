@@ -7,10 +7,13 @@ class Stack {
         this.items.push(element);
     }
     pop() {
-        return this.items.shift();
+        return this.items.pop();
     }
     peek() {
         return this.items[0];
+    }
+    isEmpty() {
+       return this.items.length === 0;
     };
 }
 
@@ -21,7 +24,9 @@ s.push("Caroline");
 console.log(s);
 s.push("David");
 console.log(s);
+
 let first = s.pop();
 console.log(first);
 let last = s.peek();
 console.log(last);
+console.log(s.isEmpty());
