@@ -14,6 +14,10 @@ class Stack {
     this.storage.push(item);
   }
 
+  pop () {
+    return this.storage.pop();
+  }
+
 
 }
 
@@ -24,3 +28,8 @@ s.push("Carol's Journal");
 s.push("Derek's Journal");
 
 console.log(s);
+
+console.log(s.pop());
+console.log(s.pop());
+console.log(s.pop());
+console.log(s.pop());
