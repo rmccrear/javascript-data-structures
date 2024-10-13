@@ -87,21 +87,26 @@ console.log(books);
 let isBooksEmpty = books.isEmpty();
 console.log(isBooksEmpty);
 
+
+//Private Property with Stack3
 class Stack3 {
+
+    #storage;
+
     constructor() {
-        this.storage = [];
+        this.#storage = [];
     }
     push(item) {
-        this.storage.push(item);
+        this.#storage.push(item);
     }
     pop() {
-        return this.storage.pop();
+        return this.#storage.pop();
     }
     peek() {
-        return this.storage[0];
+        return this.#storage[0];
     }
     isEmpty() {
-        return this.storage.length === 0;
+        return this.#storage.length === 0;
     }
 }
 
@@ -124,3 +129,10 @@ let firstAnimal = animals.peek();
 console.log(firstAnimal);
 let isAnimalsEmpty = animals.isEmpty();
 console.log(isAnimalsEmpty);
+
+
+//Verifying that you can't have access to the stack storage
+console.log(animals);
+//Verifying access through peek and pop
+console.log(animals.peek());
+console.log(animals.pop());
