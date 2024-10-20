@@ -47,7 +47,7 @@ function isPalindrome(str) {
   let queue = new Queue();
   //regex to include all characters and whitespace /[!@#$%^&*()~`?/<>,.-=_+{}\[\]\s]/g
   // TODO: Step 1: Sanitize the input
-  let sanitizedStr = str.toLowerCase().replace(/\s/g, ''); //make lowercase and remove whitespace
+  let sanitizedStr = str.toLowerCase().replace(/[,\s]/g, ''); //make lowercase and remove whitespace an commas
   // TODO: Step 2: Push characters onto stack and enqueue them into queue
   for (let i=0; i< sanitizedStr.length; i++) {
     let char = sanitizedStr[i]; 
@@ -70,9 +70,11 @@ function isPalindrome(str) {
 }
 
 // Example usage:
-// let inputStr = prompt("Enter a string to check for palindrome: ");
+// let inputStr = prompt("Enter a string to check for palindrome: "); 
 let inputStr = "racecar"
 let inputStr2 = "hello" 
+let inputStr3 = "A man, a plan, a canal, Panama"
 
 console.log(isPalindrome(inputStr));
 console.log(isPalindrome(inputStr2));
+console.log(isPalindrome(inputStr3));
