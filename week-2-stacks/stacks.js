@@ -1,19 +1,22 @@
 
 class Stack {
+    
+    #storage;
+
     constructor() {
-        this.items = [];
+        this.#storage = [];
     }
     push(names) {
-        this.items.push(names);
+        this.#storage.push(names);
     }
     pop() {
-        return this.items.pop();
+        return this.#storage.pop();
     }
     peek() {
-        return this.items[0];
+        return this.#storage[this.#storage.length - 1];
     }
     isEmpty() {
-        return this.items.length === 0;
+        return this.#storage.length === 0;
     };
 }
 
@@ -29,7 +32,13 @@ console.log(s);
 let first = s.peek();
 console.log(first);
 
-let last = s.isEmpty();
-console.log(last);
-// console.log(s.isEmpty());
+let pop = s.pop();
+console.log(pop);
+
+let empty = s.isEmpty();
+console.log(empty);
+
+
+
+
 
