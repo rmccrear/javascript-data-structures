@@ -22,12 +22,14 @@ s.push("Alice");
 s.push("Beatrice");
 s.push("Caroline");
 console.log(s);
+
 s.push("David");
 console.log(s);
 
-let first = s.pop();
+let first = s.peek();
 console.log(first);
 
-let last = s.peek();
+let last = s.isEmpty();
 console.log(last);
-console.log(s.isEmpty());
+// console.log(s.isEmpty());
+
