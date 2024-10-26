@@ -12,7 +12,7 @@ Queues have the methods `enqueue` and `dequeue`.
 
 ## Problem Set 1
 
-1. How can you count how many elements are in a queue? Use only stack methods.
+1. How can you count how many elements are in a queue? Use only queue methods.
 
 2. How can you count how many elements are in a stack? Use only stack methods.
 
