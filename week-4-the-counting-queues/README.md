@@ -12,17 +12,21 @@ Queues have the methods `enqueue` and `dequeue`.
 
 ## Problem Set 1
 
-How do you tell if two queues are equal? Use only queue methods.
+1. How can you count how many elements are in a queue? Use only stack methods.
 
-How do you tell if two stacks are equal? Use only queue methods.
+2. How can you count how many elements are in a stack? Use only stack methods.
 
-Imagine a two queues of ice cream customers. Can you count if the number of pistachio ice cream orders is the same in both queues?
+3. Imagine a two queues of ice cream customers. Can you count if the number of pistachio ice cream orders is the same in both queues?
 
-Imagine a stack of two decks of cards. How can you tell if both have the same number of aces?
+4. Imagine a stack of two decks of cards. How can you tell if both have the same number of aces?
 
-Think of another practical application of stacks or queues and write a question about it.
+5. How do you tell if two queues are equal? Use only queue methods. (For example, imagine two queues of people lined up in Halloween costumes. When they enter the party, we want to make sure they enter in pairs of the same costume. We can only use the  `dequeue` method.)
 
-Share and try to solve each other's questions.
+6. How do you tell if two stacks are equal? Use only queue methods. (For example, we want to check if two decks of cards are in the same order. We can only use the `pop` method.)
+
+7. Think of another practical application of stacks or queues and write a question about it.
+
+Whole Class: Share and try to solve each other's questions. It is easy or even possible to solve the problem using only stack or queue methods?
 
 ## Application
 

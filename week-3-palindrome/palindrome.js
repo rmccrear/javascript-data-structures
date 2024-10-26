@@ -14,14 +14,17 @@ function isPalindrome(str) {
   let queue ;
 
   // TODO: Step 1: Sanitize the input
+  // Bonus:
+  // A man a plan a canal panama. => amanaplanacanalpanama
+  // racecar => racecar
   let sanitizedStr; 
 
   // TODO: Step 2: Push characters onto stack and enqueue them into queue
   for (let i=0; i< sanitizedStr.length; i++) {
     let char = sanitizedStr[i]; 
 
-
-
+    stack.push(char)
+    queue.enqueue(char)
   }
 
   // TODO: Step 3: Compare characters by popping from stack and dequeuing from queue

@@ -31,7 +31,7 @@
 
    **Test**: Check whether the stack is empty using the `isEmpty()` method after pushing and popping elements.
 
-8. Make `storage` a (private property)[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_properties] of Stack. A private property is one you cannot access from outside of the class. You do this by changing the variable name to `#storage` and adding this line to the body of you class declaration:
+8. (Bonus) Make `storage` a (private property)[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_properties] of Stack. A private property is one you cannot access from outside of the class. You do this by changing the variable name to `#storage` and adding this line to the body of you class declaration:
 
     #storage
 
