@@ -153,6 +153,13 @@ queue4.enqueue("zombie");
 queue4.enqueue("vampire");
 queue4.enqueue("witch");
 queue4.enqueue("ghost");
+
+// queue4.enqueue("ghost");
+// queue4.enqueue("witch");
+// queue4.enqueue("vampire");
+// queue4.enqueue("zombie");
+
+
 console.log(queue4);
 
 
@@ -171,6 +178,40 @@ console.log("Do we Have Pairs Entering the Party?", checkPairs);
 
 //Problem 6
 console.log("\nProblem 6:");
+let stack3 = new Stack();
+stack3.push("jack");
+stack3.push("ace");
+stack3.push("king");
+stack3.push("queen");
+stack3.push("ten");
+console.log(stack3);
+
+let stack4 = new Stack();
+stack4.push("jack");
+stack4.push("ace");
+stack4.push("king");
+stack4.push("queen");
+stack4.push("ten");
+// stack4.push("ace");
+// stack4.push("king");
+// stack4.push("queen");
+// stack4.push("ten");
+// stack4.push("jack");
+console.log(stack4);
+
+let checkPairs2;
+while(!stack3.isEmpty() && !stack4.isEmpty()) {
+    let pair1 = stack3.pop();
+    let pair2 = stack4.pop();
+    if(pair1 === pair2) {
+        checkPairs2 = true;
+    }else {
+        checkPairs2 = false;
+        break;
+    }
+    
+}
+console.log("Are the Stack of Cards in the Same Order?", checkPairs2);
 
 //Problem 7
 console.log("\nProblem 7:");
