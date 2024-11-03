@@ -215,6 +215,29 @@ console.log("Are the Stack of Cards in the Same Order?", checkPairs2);
 
 //Problem 7
 console.log("\nProblem 7:");
+// A playlist manager using a Queue:
+
+// addSong();
+//  Adds new song to playlist.
+
+// playNext();
+//  Removes and returns the next song to be played from the front of the playlist. If the playlist is empty, return null.
+
+// peekNext();
+//  Returns the next song to be played without removing it.
+
+// isEmpty();
+//  Returns a boolean indicating whether the playlist is empty.
+
+// Shuffle playlist...
 
 //Problem 8
+//TODO: Finish problem with only queue methods
 console.log("\nProblem 8:");
+let queue5 = new Queue();
+
+while(!queue5.isEmpty()) {
+        const j = Math.floor(Math.random() * (i + 1));
+        queue5[i], queue5[j] = queue[j], queue5[i];
+        return queue5;
+}
