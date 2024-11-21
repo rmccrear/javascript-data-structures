@@ -1,36 +1,63 @@
+import { input } from '@inquirer/prompts';
 // TODO: Create Stack and Queue classes.
 
 class Queue {
+  constructor() {
+    this.storage = [];
+  }
+  enqueue(item) {
+    this.storage.push(item);
+  }
+  dequeue() {
+    return this.storage.shift();
+  }
+  peek() {
+    return this.storage[0];
+  }
+  isEmpty() {
+    return this.storage.length === 0 ? true : false;
+  }
 
 }
 
 class Stack {
+  constructor() {
+    this.storage = [];
+  }
+  push(item) {
+    this.storage.push(item);
+  }
+  pop() {
+    return this.storage.pop();
+  }
+  peek() {
+    return this.storage[this.storage.length - 1];
+  }
+  isEmpty() {
+    return this.storage.length === 0;
+  }
 
 }
 
 function isPalindrome(str) {
   // TODO: instantiate the stack and queue
-  let stack ;
-  let queue ;
-
+  let stack = new Stack();
+  let queue = new Queue();
+  //regex to include all characters and whitespace /[!@#$%^&*()~`?/<>,.-=_+{}\[\]\s]/g
   // TODO: Step 1: Sanitize the input
-  // Bonus:
-  // A man a plan a canal panama. => amanaplanacanalpanama
-  // racecar => racecar
-  let sanitizedStr; 
-
+  let sanitizedStr = str.toString().toLowerCase().replace(/[,\s]/g, ''); //make lowercase and remove whitespace an commas
   // TODO: Step 2: Push characters onto stack and enqueue them into queue
   for (let i=0; i< sanitizedStr.length; i++) {
     let char = sanitizedStr[i]; 
-
-    stack.push(char)
-    queue.enqueue(char)
+    stack.push(char);
+    queue.enqueue(char);
+    
   }
 
   // TODO: Step 3: Compare characters by popping from stack and dequeuing from queue
-  while (!stack.isEmpty()) {
-    let a;
-    let b;
+  while (!stack.isEmpty() && !queue.isEmpty()) {
+    let a = stack.pop();
+    let b = queue.dequeue();
 
       if (a !== b) {
           return "The string is not a palindrome.";
@@ -41,5 +68,14 @@ function isPalindrome(str) {
 }
 
 // Example usage:
-let inputStr = prompt("Enter a string to check for palindrome: ");
+const inputStr = await input({message: "Enter a string to check for palindrome: "}); 
 console.log(isPalindrome(inputStr));
+// let inputStr = "racecar"
+// let inputStr2 = "hello" 
+// let inputStr3 = "A man, a plan, a canal, Panama"
+
+
+
+// console.log(isPalindrome(inputStr));
+// console.log(isPalindrome(inputStr2));
+// console.log(isPalindrome(inputStr3));
