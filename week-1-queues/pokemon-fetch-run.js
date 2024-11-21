@@ -8,3 +8,5 @@ import { fetchPokemon } from "./pokemon-task-queue.js";
 fetchPokemon("pikachu");
 fetchPokemon("charmander");
 fetchPokemon("bulbasaur");
+fetchPokemon("butterfree");
+fetchPokemon("meowth");
